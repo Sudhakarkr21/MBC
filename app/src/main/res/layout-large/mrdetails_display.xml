@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+  <android.support.v7.widget.CardView
+      android:layout_margin="20sp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <LinearLayout
+          android:background="@drawable/background_white_btg"
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+              android:layout_marginLeft="20sp"
+              android:layout_weight="1.2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="MR Code"
+              android:textStyle="bold"/>
+
+          <TextView
+              android:layout_weight="2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text=":"
+              android:textStyle="bold"/>
+          <TextView
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="mrcode"
+              android:id="@+id/txt_mrcode"
+              android:textStyle="bold"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent">
+
+          <TextView
+              android:layout_marginLeft="20sp"
+              android:layout_weight="1.2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="Downloaded Record" />
+
+          <TextView
+              android:layout_weight="2"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text=":" />
+          <TextView
+              android:layout_weight="1"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="mrcode"
+              android:id="@+id/txt_downloaded_record"/>
+
+      </LinearLayout>
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <TextView
+                  android:layout_marginLeft="20sp"
+                  android:layout_weight="1.2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Downloaded Time" />
+
+              <TextView
+                  android:layout_weight="2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text=":" />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="mrcode"
+                  android:id="@+id/txt_download_time"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <TextView
+                  android:layout_marginLeft="20sp"
+                  android:layout_weight="1.2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Billed Record" />
+
+              <TextView
+                  android:layout_weight="2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text=":" />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="mrcode"
+                  android:id="@+id/txt_billed_record"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <TextView
+                  android:layout_marginLeft="20sp"
+                  android:layout_weight="1.2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Billed Time" />
+
+              <TextView
+                  android:layout_weight="2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text=":" />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="mrcode"
+                  android:id="@+id/txt_billed_time"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <TextView
+                  android:layout_marginLeft="20sp"
+                  android:layout_weight="1.2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Status" />
+
+              <TextView
+                  android:layout_weight="2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text=":" />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="mrcode"
+                  android:id="@+id/txt_status"/>
+
+          </LinearLayout>
+
+
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <TextView
+                  android:layout_marginLeft="20sp"
+                  android:layout_weight="1.2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Unbilled Record" />
+
+              <TextView
+                  android:layout_weight="2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text=":" />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="mrcode"
+                  android:id="@+id/txt_unbilled_record"/>
+
+          </LinearLayout>
+
+          <LinearLayout
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+              <TextView
+                  android:layout_marginLeft="20sp"
+                  android:layout_weight="1.2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Phone Number" />
+
+              <TextView
+                  android:layout_weight="2"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text=":" />
+              <TextView
+                  android:layout_weight="1"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="mrcode"
+                  android:id="@+id/text_phone_number"/>
+
+          </LinearLayout>
+
+      </LinearLayout>
+
+  </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".LoginActivity"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_login">
+    <ImageView
+        android:id="@+id/subdiv_logo"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitXY"
+        android:src="@drawable/subdiv" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_below="@+id/subdiv_logo"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/level"
+        android:textSize="15sp"
+        android:textColor="#673AB7"/>
+
+    <LinearLayout
+        android:id="@+id/sp1"
+        android:layout_below="@+id/text"
+        android:background="@drawable/spinner_bg"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="@dimen/dp64"
+        android:layout_marginStart="@dimen/dp64"
+        android:layout_height="wrap_content">
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/sp1"
+        android:orientation="vertical"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--<Button-->
+            <!--android:id="@+id/bt_login"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="Login"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:background="@drawable/bt_bg"-->
+            <!--/>-->
+
+
+        <android.support.design.button.MaterialButton
+            android:id="@+id/bt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="18dp"
+            android:layout_gravity="center"
+            android:textColor="#fff"
+            android:text="LOGIN"
+            app:backgroundTint="@color/colorPrimary"
+            android:theme="@style/MaterialComponentsAppTheme"
+            app:rippleColor="@color/colorAccent"
+            app:cornerRadius="10dp"
+            app:strokeWidth="@dimen/dp2"/>
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:buttonTint="#7CB342"
+            android:text="Testing Server"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_above="@+id/company_details_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/black"
+            android:text="Version"
+            android:textAlignment="viewEnd"
+            android:textSize="15sp" />
+        <TextView
+            android:layout_weight="1.9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:text=":" />
+        <TextView
+            android:id="@+id/txt_version_code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:layout_weight="1"
+            android:textAlignment="viewStart"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:id="@+id/company_details_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/company_details"/>
+
+</RelativeLayout>

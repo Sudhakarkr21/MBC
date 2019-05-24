@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/side_nav_bar"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/dp2"
+    android:paddingTop="@dimen/dp2"
+    android:paddingRight="@dimen/dp2"
+    android:paddingBottom="@dimen/dp2"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+   <com.example.mbc_tvd.Others.RoundedImageView
+       android:id="@+id/img_profile"
+       android:layout_width="50dp"
+       android:layout_height="50dp"
+       android:padding="@dimen/dp2"
+       app:srcCompat="@android:drawable/sym_def_app_icon"
+       android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Sub Division"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline" />
+
+</LinearLayout>

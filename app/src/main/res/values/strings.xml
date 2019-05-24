@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">MBC_TVD</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="level">Levels</string>
+
+    <string name="company_details">© 2018 Transvision Software &amp; Data Solutions Pvt Ltd.\n
+        All Rights Reserved\n<u>www.transvisionsolutions.com</u></string>
+    <string name="textview">TextView</string>
+    <string name="dialog_login">Login</string>
+    <string name="main">Main</string>
+
+    <string-array name="login_role3">
+        <item>--SELECT--</item>
+        <item>ADMIN</item>
+        <item>AAO/AEE</item>
+    </string-array>
+    <string name="login">MBC_Insight</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="mr_time_stamp">MR time stamp</string>
+    <string name="mr_tracking">MR Tracking</string>
+    <string name="title_activity_main_2">Main_Activity2</string>
+    <string name="billing_file_summary">Billing File Summary</string>
+    <string name="reports">Reports</string>
+    <string name="to_date">To Date</string>
+    <string name="from_date">From_date</string>
+    <string name="colon">:</string>
+    <string name="search">Search</string>
+</resources>
